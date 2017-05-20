@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MCBooks</string>
+    <string name="welcome_mcbooks">Welcome to MCBooks</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="title_activity_home" translatable="false">HomeActivity</string>
+    <string name="nav_learning_title">Learing</string>
+    <string name="nav_mybook_title">My Books</string>
+    <string name="nav_mygift_title">My Gifts</string>
+    <string name="nav_notify_title">Notify</string>
+    <string name="nav_setting_title">Setting</string>
+    <string name="nav_mail_title">Mail</string>
+    <string name="nav_fanpage_title">FanPage</string>
+    <string name="nav_exit_title">Exit</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+    <string name="action_settings" translatable="false">Settings</string>
+
+    <string name="your_infomation">Your information</string>
+    <string name="name">Name</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="telephone">Telephone</string>
+    <string name="notification">Notify</string>
+
+    <string name="no_notification">You have no notification</string>
+</resources>

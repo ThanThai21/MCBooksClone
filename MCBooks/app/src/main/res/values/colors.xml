@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">@android:color/holo_blue_light</color>
+    <color name="colorAccent">@android:color/holo_blue_dark</color>
+    <color name="colorLogin">#FFFFFF</color>
+    <color name="colorTextLogin">#FFFFF1</color>
+    <color name="colorTextLoginButton">#010145</color>
+    <color name="colorIconTint">#FFFFEE</color>
+    <color name="colorToolbar">#FFFFFF</color>
+</resources>

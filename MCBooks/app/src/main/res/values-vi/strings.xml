@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MCBooks</string>
+    <string name="welcome_mcbooks">Chào mừng bạn đến  với MCBooks</string>
+    <string name="login_with_facebook">Đăng nhập với Facebook</string>
+    <string name="login_with_google">Đăng nhập với Google</string>
+    <string name="nav_exit_title">Thoát</string>
+    <string name="nav_learning_title">Đang học</string>
+    <string name="nav_fanpage_title">FanPage</string>
+    <string name="nav_mail_title">Góp ý</string>
+    <string name="nav_mybook_title">Sách của tôi</string>
+    <string name="nav_mygift_title">Quà tặng của tôi</string>
+    <string name="nav_notify_title">Thông báo</string>
+    <string name="nav_setting_title">Cài đặt</string>
+    <string name="your_infomation">Thông tin của bạn</string>
+    <string name="name">Tên</string>
+    <string name="telephone">Điện thoại</string>
+    <string name="notification">Thông báo</string>
+    <string name="no_notification">Bạn chưa có thông báo nào</string>
+</resources>

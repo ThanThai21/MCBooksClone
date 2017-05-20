@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:theme="@style/Theme.AppCompat.NoActionBar"
+    android:background="@drawable/login_background"
+    tools:context="com.esp.mcbooks.LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:text="@string/welcome_mcbooks"
+        android:textColor="@color/colorTextLogin"
+        android:textAlignment="center"
+        android:textSize="32sp"/>
+
+    <Button
+        android:id="@+id/login_facebook_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/login_google_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/login_button_round_corner"
+        android:drawableLeft="@drawable/facebook"
+        android:paddingLeft="15sp"
+        android:text="@string/login_with_facebook"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textColor="@color/colorTextLoginButton"
+        android:drawablePadding="10sp"/>
+
+
+    <Button
+        android:id="@+id/login_google_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/login_button_round_corner"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:paddingLeft="15sp"
+        android:drawableLeft="@drawable/search"
+        android:text="@string/login_with_google"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textColor="@color/colorTextLoginButton"
+        android:drawablePadding="10sp" />
+</RelativeLayout>
