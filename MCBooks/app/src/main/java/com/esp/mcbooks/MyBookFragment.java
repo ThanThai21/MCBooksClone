@@ -1,6 +1,7 @@
 package com.esp.mcbooks;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -40,7 +41,8 @@ public class MyBookFragment extends Fragment {
         addNewButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(getContext(), ScanQRCodeActivity.class);
+                startActivity(intent);
             }
         });
 
