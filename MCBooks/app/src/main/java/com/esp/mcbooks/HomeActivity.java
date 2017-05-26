@@ -1,5 +1,7 @@
 package com.esp.mcbooks;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -43,18 +45,9 @@ public class HomeActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        gridView = (GridView)findViewById(R.id.content_book_grid_view);
-        bookAdapter = new BookAdapter(this, R.layout.book_item);
-        getBooklist();
-        gridView.setAdapter(bookAdapter);
-        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                TextView textView = (TextView)view.findViewById(R.id.item_title_text_view);
-                Toast.makeText(HomeActivity.this, textView.getText().toString(), Toast.LENGTH_SHORT).show();
-            }
-        });
-
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.container, new MyBookFragment()).commit();
 
 
     }
@@ -77,31 +70,33 @@ public class HomeActivity extends AppCompatActivity
 
         if (id == R.id.nav_learning) {
             toolbar.setTitle(R.string.nav_learning_title);
-            return false;
         } else if (id == R.id.nav_mybook) {
             toolbar.setTitle(R.string.nav_mybook_title);
-            return false;
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.container, new MyBookFragment()).commit();
         } else if (id == R.id.nav_mygift) {
             toolbar.setTitle(R.string.nav_mygift_title);
-            return false;
         } else if (id == R.id.nav_notify) {
             toolbar.setTitle(R.string.nav_notify_title);
-            return false;
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.container, new NotifyFragment()).commit();
         } else if (id == R.id.nav_setting) {
             Intent intent = new Intent(HomeActivity.this, SettingActivity.class);
             startActivity(intent);
             return false;
         } else if (id == R.id.nav_mail) {
-            return false;
+
         } else if (id == R.id.nav_fanpage) {
-            return false;
+
         } else if (id == R.id.nav_exit) {
-            return false;
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
-        return true;
+        return false;
     }
 
     private void getInit() {

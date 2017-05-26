@@ -24,5 +24,8 @@
     <string name="telephone">Telephone</string>
     <string name="notification">Notify</string>
 
+    <string name="add_new">Add New</string>
+    <string name="enter_barcode">Enter barcode</string>
     <string name="no_notification">You have no notification</string>
+    <string name="guide">Move the camera foward QR Code</string>
 </resources>

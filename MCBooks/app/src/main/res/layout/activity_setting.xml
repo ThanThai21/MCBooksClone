@@ -5,13 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingTop="30sp"
     tools:context="com.esp.mcbooks.SettingActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:theme="@style/ThemeToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorToolbar"
+        android:elevation="10dp"
+        app:titleTextColor="@android:color/holo_blue_dark"
+        android:backgroundTintMode="add"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_gravity="center"
+        android:layout_marginTop="30sp"
         app:civ_border_width="2sp"
         app:civ_border_color="@android:color/holo_blue_dark"
         android:src="@drawable/dienoccho"/>
@@ -29,103 +40,118 @@
         android:layout_height="10sp"
         android:background="@drawable/line"/>
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10sp"
+        android:layout_marginTop="0sp"
+        android:background="@drawable/line"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="15sp"
+        android:orientation="vertical"
         android:paddingBottom="0sp"
-        android:orientation="vertical">
+        android:paddingLeft="15sp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50sp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:gravity="center_vertical"
                 android:text="@string/name"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
                 android:text="Thân Thái"
-                android:textSize="18sp"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
         </LinearLayout>
+
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="10sp"
-            android:background="@drawable/line"/>
+            android:background="@drawable/line" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50sp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:gravity="center_vertical"
                 android:text="@string/email"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
                 android:text="thaibk210@gmail.com"
-                android:textSize="18sp"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
         </LinearLayout>
+
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="10sp"
-            android:background="@drawable/line"/>
+            android:background="@drawable/line" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50sp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:gravity="center_vertical"
                 android:text="@string/telephone"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
                 android:text="+841675801065"
-                android:textSize="18sp"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
         </LinearLayout>
+
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="10sp"
-            android:background="@drawable/line"/>
+            android:background="@drawable/line" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50sp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:gravity="center_vertical"
                 android:text="@string/notification"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
+
             <Switch
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:paddingRight="15sp"
-                android:checked="true"/>
+                android:checked="true"
+                android:paddingRight="15sp" />
         </LinearLayout>
     </LinearLayout>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="10sp"
-        android:layout_marginTop="0sp"
-        android:background="@drawable/line"/>
 </LinearLayout>

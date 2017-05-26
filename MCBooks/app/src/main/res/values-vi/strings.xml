@@ -17,4 +17,7 @@
     <string name="telephone">Điện thoại</string>
     <string name="notification">Thông báo</string>
     <string name="no_notification">Bạn chưa có thông báo nào</string>
+    <string name="add_new">Thêm sách mới</string>
+    <string name="enter_barcode">Nhập barcode</string>
+    <string name="guide">Di chuyển camera phía trước QR Code</string>
 </resources>

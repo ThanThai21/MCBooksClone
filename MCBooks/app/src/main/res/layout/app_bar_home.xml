@@ -24,9 +24,13 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include
-        android:id="@+id/layout_content_home"
-        layout="@layout/content_home"
-        android:visibility="visible"/>
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical">
+
+    </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>
