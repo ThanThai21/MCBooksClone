@@ -22,4 +22,11 @@
         <item name="android:textColorSecondary">@android:color/holo_blue_dark</item>
     </style>
 
+    <style parent="@style/TextAppearance.Design.Tab" name="NavigationTabTextAppeareance">
+        <item name="android:textSize">13.0sp</item>
+    </style>
+
+
+
+
 </resources>

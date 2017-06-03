@@ -35,16 +35,10 @@
         android:paddingRight="15sp"
         android:text="@string/your_infomation"
         android:textSize="24sp"/>
-    <ImageView
+    <com.esp.mcbooks.CustomLine
         android:layout_width="match_parent"
-        android:layout_height="10sp"
-        android:background="@drawable/line"/>
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="10sp"
-        android:layout_marginTop="0sp"
-        android:background="@drawable/line"/>
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -75,10 +69,10 @@
                 android:textSize="18sp" />
         </LinearLayout>
 
-        <ImageView
+        <com.esp.mcbooks.CustomLine
             android:layout_width="match_parent"
-            android:layout_height="10sp"
-            android:background="@drawable/line" />
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -102,10 +96,10 @@
                 android:textSize="18sp" />
         </LinearLayout>
 
-        <ImageView
+        <com.esp.mcbooks.CustomLine
             android:layout_width="match_parent"
-            android:layout_height="10sp"
-            android:background="@drawable/line" />
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -129,10 +123,10 @@
                 android:textSize="18sp" />
         </LinearLayout>
 
-        <ImageView
+        <com.esp.mcbooks.CustomLine
             android:layout_width="match_parent"
-            android:layout_height="10sp"
-            android:background="@drawable/line" />
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -153,5 +147,13 @@
                 android:checked="true"
                 android:paddingRight="15sp" />
         </LinearLayout>
+        <com.esp.mcbooks.CustomLine
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:background="@android:color/darker_gray"/>
     </LinearLayout>
+    <com.esp.mcbooks.CustomLine
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"/>
 </LinearLayout>

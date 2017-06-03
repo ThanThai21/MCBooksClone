@@ -20,4 +20,15 @@
     <string name="add_new">Thêm sách mới</string>
     <string name="enter_barcode">Nhập barcode</string>
     <string name="guide">Di chuyển camera phía trước QR Code</string>
+    <string name="usage">Hướng dẫn đọc</string>
+    <string name="detail">Chi tiết</string>
+    <string name="timetable">Lịch học</string>
+    <string name="add_timetable">Thêm lịch</string>
+    <string name="listen_book">Nghe theo sách</string>
+    <string name="author">Tác giả</string>
+    <string name="continue_learing">Tiếp tục</string>
+    <string name="general">Tổng quát</string>
+    <string name="study">Học tập</string>
+    <string name="task">Bài tập</string>
+    <string name="all">Tất cả</string>
 </resources>

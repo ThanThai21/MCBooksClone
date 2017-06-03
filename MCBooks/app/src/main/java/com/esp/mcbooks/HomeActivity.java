@@ -1,7 +1,7 @@
 package com.esp.mcbooks;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -45,7 +45,7 @@ public class HomeActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        FragmentManager fragmentManager = getFragmentManager();
+        FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.container, new MyBookFragment()).commit();
 
@@ -69,17 +69,22 @@ public class HomeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_learning) {
-            toolbar.setTitle(R.string.nav_learning_title);
+            Intent intent = new Intent(HomeActivity.this, LearningActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_mybook) {
             toolbar.setTitle(R.string.nav_mybook_title);
-            FragmentManager fragmentManager = getFragmentManager();
+            FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container, new MyBookFragment()).commit();
         } else if (id == R.id.nav_mygift) {
             toolbar.setTitle(R.string.nav_mygift_title);
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.container, new MyGiftFragment()).commit();
+
         } else if (id == R.id.nav_notify) {
             toolbar.setTitle(R.string.nav_notify_title);
-            FragmentManager fragmentManager = getFragmentManager();
+            FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container, new NotifyFragment()).commit();
         } else if (id == R.id.nav_setting) {
