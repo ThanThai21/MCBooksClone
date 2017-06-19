@@ -91,6 +91,7 @@ public class LearningActivity extends AppCompatActivity{
         TextView textViewTab2 = (TextView) view2.findViewById(R.id.learning_title_tabview);
         textViewTab2.setText(titleTablayout[2]);
         tabLayout.getTabAt(2).setCustomView(textViewTab2);
+
     }
 
     private void init() {

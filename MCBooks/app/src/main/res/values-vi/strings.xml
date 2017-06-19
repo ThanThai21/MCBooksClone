@@ -31,4 +31,7 @@
     <string name="study">Học tập</string>
     <string name="task">Bài tập</string>
     <string name="all">Tất cả</string>
+    <string name="confirm">Bạn có muốn thoát không?</string>
+    <string name="no">Không</string>
+    <string name="exit">Thoát</string>
 </resources>

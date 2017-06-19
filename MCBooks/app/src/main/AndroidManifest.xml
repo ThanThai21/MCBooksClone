@@ -3,6 +3,7 @@
     package="com.esp.mcbooks">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -32,6 +33,14 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".LearningActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BookDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddScheduleActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".VideoActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
